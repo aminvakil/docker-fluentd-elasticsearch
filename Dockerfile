@@ -13,4 +13,8 @@ RUN gem install elasticsearch-xpack --version 7.17.7 \
     && gem sources --clear-all \
     && rm -rf /tmp/* /var/tmp/* /usr/lib/ruby/gems/*/cache/*.gem
 
+RUN gem install fluent-plugin-prometheus --version 2.1.0 \
+    && gem sources --clear-all \
+    && rm -rf /tmp/* /var/tmp/* /usr/lib/ruby/gems/*/cache/*.gem
+
 USER fluent
