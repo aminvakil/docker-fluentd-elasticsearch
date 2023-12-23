@@ -3,7 +3,7 @@ FROM fluent/fluentd:v1.16.3-1.0
 # Use root account to use apk
 USER root
 
-RUN gem install fluent-plugin-elasticsearch --no-document --version 5.2.4 \
+RUN gem install fluent-plugin-elasticsearch --no-document --version 5.4.2 \
 ##### THIS IS NO LONGER NEEDED ##### https://github.com/uken/fluent-plugin-elasticsearch/commit/dfc883
 #    && gem uninstall --ignore-dependencies faraday \
 #    && gem install faraday --no-document --version 1.10.0 \
